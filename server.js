@@ -27,5 +27,6 @@ app.use("*", (req, res) => {
 });
 
 app.listen(process.env.PORT || 8080, () => {
-    console.info(`Server started at ${process.env.PORT || 8080}`);
+    const port = process.env.PORT || 8080;
+    console.info(`http://localhost:${port}`);
 });
